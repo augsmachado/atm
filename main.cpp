@@ -1,6 +1,6 @@
 /*
 	Name: ATM system
-	Copyright: MIT License
+	Copyright: 2018 Augusto Machado Ramos
 	Author: Augusto Machado Ramos
 	Date: 18/08/18 11:35
 	Description: 
@@ -11,16 +11,47 @@
 			know the fundamentals of embedded software programming,
 			in addition to developing advanced knowledge in C / C ++.
 */
+
+// Libraries
 #include <iostream>
-
-/* run this program using the console pauser or add your own getch, system("pause") or input loop */
-
 #include <stdio.h>
 #include <stdlib.h>
+#include <string.h>
 
-int main()
-{
-  printf("OLA !!\n");
-  system("PAUSE");   
-  return 0;
+// Constants
+#define True 1
+#define False 0
+#define MAX 3
+
+// Structs
+struct User{
+	int user;
+	int key;
+};
+
+// Function prototypes
+int Login (int user, int key);
+
+
+int main(){
+	User account[MAX];
+	int ok= True, user, key;
+	
+	account[0].user = 1111;
+	account[0].key = 123456;
+	
+	account[1].user = 2222;
+	account[1].key = 123456;
+	
+	account[2].user = 3333;
+	account[2].key = 123456;
+	
+	ok = Login(int user, int key);
+
+
+
+	printf("OLA !!\n");
+	system("PAUSE");
+	return 0;
+
 }
