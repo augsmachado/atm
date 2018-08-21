@@ -3,6 +3,7 @@
 	Copyright: 2018 Augusto Machado Ramos
 	Author: Augusto Machado Ramos
 	Date: 18/08/18 11:35
+	Comment language: pt-br
 	Description: 
 		The goal was to develop an ATM system or a bank self-service platform,
 			from project design,
@@ -12,46 +13,35 @@
 			in addition to developing advanced knowledge in C / C ++.
 */
 
-// Libraries
-#include <iostream>
-#include <stdio.h>
+#include <iostream>  // Libraries
 #include <stdlib.h>
-#include <string.h>
 
-// Constants
-#define True 1
+#define True 1  // Constants
 #define False 0
 #define MAX 3
 
 // Structs
-struct User{
-	int user;
-	int key;
-};
 
 // Function prototypes
-int Login (int user, int key);
+int Login ();
 
 
 int main(){
-	User account[MAX];
-	int ok= True, user, key;
+	int ok = True;
 	
-	account[0].user = 1111;
-	account[0].key = 123456;
-	
-	account[1].user = 2222;
-	account[1].key = 123456;
-	
-	account[2].user = 3333;
-	account[2].key = 123456;
-	
-	ok = Login(int user, int key);
+  	ok = Login();
 
-
-
-	printf("OLA !!\n");
-	system("PAUSE");
-	return 0;
-
+	if (ok == True){
+		printf("OLA Augusto!!\n");
+		system("PAUSE");
+	} else{
+		/*
+		Caso o numero de tentativas exeder a 3, o programa retorna zero indicando erro
+			finalizando a operacao
+		*/
+		system("cls");
+		printf("Voce excedeu ao numero de tentativas permitidas\n");
+		printf("Contate seu gerente para desbloquear sua senha\n\n");
+		return 0;
+	}
 }
