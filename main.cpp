@@ -24,6 +24,9 @@
 
 // Function prototypes
 int Login ();
+int Menu ();
+
+char Upper(char upper);
 
 
 int main(){
@@ -32,7 +35,9 @@ int main(){
   	ok = Login();
 
 	if (ok == True){
-		printf("OLA Augusto!!\n");
+		system("cls");
+		printf("OLA Augusto!!\n\n");
+		Menu();
 		system("PAUSE");
 	} else{
 		/*

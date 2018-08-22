@@ -1,3 +1,5 @@
+/* File responsible for Login function and validation of user data */
+
 // Libraries
 #include <iostream>
 #include <string.h>
@@ -7,7 +9,7 @@
 #define False 0
 
 int Login (){
-	char user[6]= "abcde", key[6]="abcde";
+	char user[7]= "abcde", key[7]="abcde";
 	int attempt = 1;  // Inicia em 1, pois o 1o acesso e considerado uma tentativa
 	int User, Key;
 
@@ -15,7 +17,7 @@ int Login (){
 		
 		printf("Digite seu usuario:\t");  // Entrada de dados do usuario
 		scanf("%s", user);
-		printf("Digite sua senha de 5 digitos:\t");
+		printf("Digite sua senha:\t");
 		scanf("%s", key);
 		
 		
