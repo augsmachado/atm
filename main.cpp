@@ -26,8 +26,6 @@
 int Login ();
 int Menu ();
 
-char Upper(char upper);
-
 
 int main(){
 	int ok = True;

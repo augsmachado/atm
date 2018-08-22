@@ -4,11 +4,6 @@ Deposito
 Saque
 Transferencia
 Pagamento
-Finalizar
-
-
-UPPER --> transforma todas as letras digitadas para escolhas do menu em maiusculas
-
 */
 
 // Libraries
@@ -17,3 +12,5 @@ UPPER --> transforma todas as letras digitadas para escolhas do menu em maiuscul
 // Constants
 #define True 1
 #define False 0
+
+
