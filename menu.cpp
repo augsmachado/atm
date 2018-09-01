@@ -20,13 +20,9 @@ int Menu(){
 	
 	// Finaliza a operacao, caso a escolha seja um F
 	if (choices =='1'){  // 1 representa a Conta Corrente
-		while(choices != 'F'){
-			choices = Options();
-		}
+		choices = Options();
 	} else if (choices == '2'){  // 2 representa a Conta Poupanca
-		while(choices != 'F'){
-			choices = Options();
-		}
+		choices = Options();
 	}
 }
 
@@ -48,6 +44,7 @@ char TypeAccount(){
 	return choices;
 }
 
+
 /* Apresenta todas as opcoes possiveis de transacao */
 char Options(){
 	char choices='A';
@@ -59,6 +56,8 @@ char Options(){
 		if(choices == '6')
 			return 'F'; // F finaliza a operacao no terminal
 	}
+
+	
 	return '0';
 }
 
