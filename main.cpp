@@ -28,14 +28,20 @@ int Menu ();
 
 
 int main(){
-	int ok = True;
+	int ok= True, end = True;
 	
   	ok = Login();
+  	
 
 	if (ok == True){
 		system("cls");
 		printf("OLA Augusto!!\n\n");
-		Menu();
+
+		end = Menu();   // Finaliza o programa quando o usario deseja
+		if(end == False){
+			return 0;
+		}
+		
 		system("PAUSE");
 	} else{
 		/*

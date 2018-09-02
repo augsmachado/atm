@@ -24,6 +24,10 @@ int Menu(){
 	} else if (choices == '2'){  // 2 representa a Conta Poupanca
 		choices = Options();
 	}
+	
+	if(choices == 'F'){
+		return 0;
+	}
 }
 
 
@@ -53,8 +57,30 @@ char Options(){
 		PrintOptions();
 		scanf("%c", &choices);
 		
-		if(choices == '6')
+ 		if(choices == '6')
 			return 'F'; // F finaliza a operacao no terminal
+
+/*
+		switch (choices){
+		case '1':
+			Saldo();
+			break;
+		case '2':
+			Deposito();
+			break;
+		case '3':
+			Saque();
+			break;
+		case '4':
+			Transferencia();
+			break;
+		case '5':
+			Pagamento();
+			break
+		case '6':
+			return 'F';
+	}
+*/
 	}
 
 	
